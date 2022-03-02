@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+body {
+    background-color: hsl(204, 43%, 93%);
+    font-family: 'Karla', sans-serif;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+}
+
+.card {
+    width: 50rem;
+    transform : scale(0.8);
+    border-radius: 10px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.first-section {
+    text-align: left;
+    padding: 50px 85px 50px 60px;
+    font-size: 18px;
+    color: hsl(218, 22%, 67%)
+}
+.first-section > h1 {
+    color: hsl(179, 62%, 43%);
+    font-weight: 700;
+    font-size: 28px;
+    padding-bottom: 25px;
+}
+h1+p{
+    color: hsl(71, 73%, 54%);
+    font-weight: 700;
+}
+
+.second-section {
+    display: grid;
+    margin: 0;
+    padding: 0;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: repeat(2, auto);
+    text-align: left;
+}
+
+.box-one {
+    background-color: #2bb3b1;
+    border-bottom-left-radius: 10px;
+    padding: 50px 50px;
+    color: hsl(204, 43%, 93%);
+    font-size: 18px;
+}
+
+.box-one h2+p{
+    font-size: 40px;
+    font-weight: 700;
+    color: white;
+}
+
+p > span {
+    font-size: 18px;
+    color: hsla(206, 28%, 95%, 0.507);
+}
+
+h2 {
+    color: hsl(204, 43%, 93%);
+    font-size: 22px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.btn {
+    background-color: hsl(71, 73%, 54%);
+    padding: 10px;
+    width: 90%;
+    margin-top: 20px;
+    font-size: 20px;
+    color: hsl(204, 43%, 93%);
+    font-weight: 700;
+    border-radius: 8px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.box-two{
+    background-color: #4abebd;
+    border-bottom-right-radius: 10px;
+    padding: 50px 50px;
+    color: hsl(204, 43%, 93%);
+    font-size: 18px;
+    line-height: 1.5;
+    word-spacing: 5px;
+}
+
+.box-two > p {
+    padding-right: 50px;
+}
+
+footer {
+    margin: 0;
+    padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        min-width: 375px;
+    }
+    .container {
+      display: flex;
+    }
+    .second-section {
+        display: block;
+    }
+    .box-one {
+        border-radius: 0;
+    }
+    .box-two {
+        border-bottom-left-radius: 10px;
+    }
+    
+  }
